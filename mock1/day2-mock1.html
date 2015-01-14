@@ -2,35 +2,93 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Mock 1 "Home"</title>
+	<!-- Normalize.css -->
+	<link rel="stylesheet" href="../../../commonTools/normalize.css">
+
+	<!-- Glyph icons -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
+	<!-- custom.css -->
+	<link rel="stylesheet" href="base.css">
 </head>
 <body>
 	<div class="container">
-		<nav>
-			<span>Company logo</span><span>nav</span>
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="javascript:void(0);">Company Logo</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right navPad">
+		        <li><a href="#">Home</a></li>
+		        <li class="pipe">|</li>
+		        <li><a href="#">Products</a></li>
+		        <li class="pipe">|</li>
+		        <li><a href="../mock2/mock2.html" target="_self">About Us</a></li>
+		        <li class="pipe">|</li>
+		        <li><a href="#">Contact Us</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
 		</nav>
+
 		<header>
-			<div>breadcrumbs</div>
-			<h1>Products...</h1>
+			<div class="test-small">Home / Products</div>
+			<h1>Products. <small>We build amazing stuff.</small></h1>
+			<hr>
 		</header>
 		<section>
 			<div class="row">
-				<span>img</span>
-				<span>img</span>
-				<span>img</span>
+				<div class="col-md-4">
+						<img src="http://lorempixel.com/400/200/" class="img-responsive" alt="Responsive image">
+						<h2>Product One</h2>
+						<p>This is an awesome product one description.</p> 	
+						<a class="btn btn-default" role="button">Learn More</a>
+				</div>
+				<div class="col-md-4">
+						<img src="http://lorempixel.com/400/200/" class="img-responsive" alt="Responsive image">
+						<h2>Product Two</h2>
+						<p>This is an awesome product two description.</p> 	
+						<a class="btn btn-default" role="button">Learn More</a>
+				</div>
+				<div class="col-md-4">
+						<img src="http://lorempixel.com/400/200/" class="img-responsive" alt="Responsive image">
+						<h2>Product Three</h2>
+						<p>This is an awesome product three description.</p> 	
+						<a class="btn btn-default" role="button">Learn More</a>
+				</div>
 			</div> <!-- .row -->
 		</section>
 		<section>
-			<div>wanna get in touch...</div>
-			<div class="glyph"> XX  XX  XX</div>
+			<hr>
+			<h5 class="text-center">Wanna get in touch? Email us at <a href="mailto:office@awesomeproduct.com">office@awesomeproduct.com</a>.</h5>
+			<hr>
 		</section>
-		<footer>copywrite</footer>
+		<footer>
+			<div class="text-center">
+
+				<!-- Nick's glyph suggestin -->
+<!-- 				<a href="#facebook"><i class="fa fa-facebook-square"></i></a>
+				<a href="#facebook"><i class="fa fa-twitter-square"></i></a>
+				<a href="#facebook"><i class="fa fa-linkedin-square"></i></a> -->
+
+				<!-- my glyph suggestin -->
+				<img src="http://www.spokefest.org/includes/images/page_pics/footer/twitter_logo_footer_sub_page.png" class="glyph-size marginRt">
+				<img src="http://millhavenhomes.com/wp-content/themes/virtue_blue2-_accounting/Site/graphics/footer_facebook.png" facebook class="glyph-size marginRt">
+				<img src="http://repairrep.com/ListingsPRO_files/linkedin-logo-small-web-footer.png" class="glyph-size marginRt">
+				<!-- <span class="glyphicons glyphicons-cat"></span> <span class="glyphicons glyphicons-cat"></span> <span class="glyphicons glyphicons-cat"></span> --></div>
+			<h5 class="text-center "><small>&copy Copyright 2013 Product Name. All rights reserved.</small></h5>
+		</footer>
 	</div> <!-- .container -->
 </body>
 </html>
